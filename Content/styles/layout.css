@@ -137,19 +137,25 @@ footer {
   footer .footer-caption {
     color: #fff;
     padding-top: 80px; }
-    footer .footer-caption h1, footer .footer-caption h2 {
+    footer .footer-caption h1 {
       text-shadow: 0 1px 1px black;
       text-align: center;
       text-transform: capitalize;
       font-family: 'Animated';
-      font-size: 17rem; }
-    footer .footer-caption h1 {
-      margin-bottom: -80px; }
-    footer .footer-caption p {
-      font-family: 'Futura';
-      font-size: 3rem;
-      line-height: 30px;
-      padding: 0 40px; }
+      font-size: 14rem; }
+    footer .footer-caption .footer-socials {
+      text-align: center; }
+      footer .footer-caption .footer-socials a {
+        color: #fff !important;
+        font-size: 8rem;
+        padding: 4%;
+        text-shadow: 0 1px 1px black;
+        -moz-transition: 800ms;
+        -o-transition: 800ms;
+        -webkit-transition: 800ms;
+        transition: 800ms; }
+        footer .footer-caption .footer-socials a:hover {
+          color: black; }
 
 /*#endregion */
 /*==========  Mobile First Method  ==========*/

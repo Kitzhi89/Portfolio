@@ -152,34 +152,35 @@
 
             .flaticon-roller5 {
                 color: #BF5505;
-
             }
+
             .flaticon-sport175 {
                 color: #7F3904;
-
             }
+
             .flaticon-time102 {
                 color: #E56606;
             }
+
             .flaticon-tool487 {
                 color: #401C02;
-
             }
         }
 
         article {
             font-family: 'Futura';
+
             h1 {
                 color: #FF7207;
                 text-transform: uppercase;
                 font-size: 20px;
-                font-weight:700;
+                font-weight: 700;
             }
 
             p {
                 font-family: 'Raleway-Regular';
                 color: #666;
-                text-align:justify;
+                text-align: justify;
             }
         }
     }
@@ -223,30 +224,34 @@ footer {
         color: #fff;
         padding-top: 80px;
 
-        h1, h2 {
+        h1 {
             text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
             text-align: center;
             text-transform: capitalize;
 
             font: {
                 family: 'Animated';
-                size: 17rem;
+                size: 14rem;
             }
         }
 
-        h1 {
-            margin-bottom: -80px;
-        }
+        .footer-socials {
+            text-align: center;
 
+            a {
+                color: #fff !important;
+                font-size: 8rem;
+                padding: 4%;
+                text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
+                -moz-transition: 800ms;
+                -o-transition: 800ms;
+                -webkit-transition: 800ms;
+                transition: 800ms;
 
-        p {
-            font: {
-                family: 'Futura';
-                size: 3rem;
+                &:hover {
+                    color: black;
+                }
             }
-
-            line-height: 30px;
-            padding: 0 40px;
         }
     }
 }
@@ -265,7 +270,6 @@ footer {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-    
 }
 
 /* Medium Devices, Desktops */
