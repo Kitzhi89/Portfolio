@@ -264,23 +264,24 @@ body {
   #projects .project a header {
     background-color: #272729;
     min-height: 200px;
-    /*position: relative;*/
-    padding: 7px; }
+    padding: 30px;
+    position: relative; }
     #projects .project a header h1 {
-      color: #fff;
       margin: 0;
-      padding: 30px;
-      /*position: absolute;*/
-      /*bottom: 30px;*/
-      /*left: 30px;*/
-      font-family: 'Futura (Light)';
+      color: #D04830;
+      position: absolute;
+      bottom: 20px;
+      font-family: Raleway-Regular;
       font-weight: bold; }
+  #projects .project a:hover {
+    text-decoration: none; }
   #projects .project .project-description {
     background-color: #fff; }
     #projects .project .project-description p {
       color: #333;
       padding: 30px;
       text-align: justify;
+      margin: 0;
       font-family: Raleway-Regular; }
 
 /*#endregion */

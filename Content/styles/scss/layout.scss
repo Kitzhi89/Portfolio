@@ -422,22 +422,24 @@ body {
             header {
                 background-color: #272729;
                 min-height: 200px;
-                /*position: relative;*/
-                padding: 7px;
+                padding: 30px;
+                position:relative;
 
                 h1 {
-                    color: #fff;
                     margin: 0;
-                    padding: 30px;
-                    /*position: absolute;*/
-                    /*bottom: 30px;*/
-                    /*left: 30px;*/
-
+                    color:#D04830;
+                    position:absolute;
+                    bottom:20px;
                     font: {
-                        family: 'Futura (Light)';
+                        family: Raleway-Regular;
                         weight: bold;
                     }
                 }
+               
+            }
+
+            &:hover {
+                text-decoration: none;
             }
         }
 
@@ -449,6 +451,7 @@ body {
                 color: #333;
                 padding: 30px;
                 text-align: justify;
+                margin: 0;
 
                 font: {
                     family: Raleway-Regular;
