@@ -21,6 +21,29 @@
 }
 
 /*#endregion */
+/*#region Buttons */
+.button {
+    background-color: #40373C;
+    padding: 10px;
+    border-radius: 3px;
+    color: #fff;
+    transition: 800ms;
+
+    &:hover {
+        color: #fff;
+        background-color: darken(#40373C,5);
+        text-decoration: none;
+    }
+}
+
+
+/*#endregion */
+$bg-color: #DEDECD;
+$fg-color: #EEEFE5;
+
+body {
+    background-color: $bg-color;
+}
 
 /*#region Stuff I don't know where else to put */
 
@@ -28,11 +51,35 @@
     padding: 0 !important;
 }
 
+.no-padding {
+    padding: 0 !important;
+}
+
+.gradient {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;0.65+0,0+100;Neutral+Density */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    height: 100%;
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.30);
+}
+
 
 /*#endregion */
 
 /*#region Navigation */
+
+
 .nav {
+    background-color: rgba(0, 0, 0, 0.50);
+
     li {
         border-radius: 10px;
 
@@ -49,7 +96,8 @@
             -webkit-transition: 800ms;
             transition: 800ms;
 
-            &:hover {
+            &:hover,
+            &:focus {
                 background-color: white;
                 color: #7c7c7c;
             }
@@ -87,6 +135,18 @@
     background-size: cover;
     height: 700px;
 
+    &.reduced-height {
+        height: 400px;
+
+        .intro-caption {
+            padding-top: 60px;
+
+            h1 {
+                font-size: 12rem;
+            }
+        }
+    }
+
     .intro-caption {
         padding-top: 80px;
 
@@ -122,7 +182,7 @@
 
 #short-description {
     .dark-grey-bg {
-        background-color: #DEDECD;
+        background-color: $bg-color;
 
         p {
             text-align: center;
@@ -139,31 +199,31 @@
 
 #services {
     .light-grey-bg {
-        background-color: #EEEFE5;
+        background-color: $fg-color;
 
         .img-circle {
             margin-right: 30px;
             float: left;
-            background-color: #EEEFE5;
+            background-color: $fg-color;
             text-align: center;
             border-radius: 50%;
             height: 80px;
             width: 80px;
 
             .flaticon-roller5 {
-                color: #BF5505;
+                color: #74515A;
             }
 
             .flaticon-sport175 {
-                color: #7F3904;
+                color: #74515A;
             }
 
             .flaticon-time102 {
-                color: #E56606;
+                color: #74515A;
             }
 
             .flaticon-tool487 {
-                color: #401C02;
+                color: #74515A;
             }
         }
 
@@ -171,7 +231,7 @@
             font-family: 'Futura';
 
             h1 {
-                color: #FF7207;
+                color: #D04830 !important;
                 text-transform: uppercase;
                 font-size: 20px;
                 font-weight: 700;
@@ -197,7 +257,7 @@
 
         header {
             h1 {
-                color: #FF7207;
+                color: #D04830;
 
                 font: {
                     family: 'Animated';
@@ -214,46 +274,204 @@
 }
 /*#endregion */
 
-/*#region Footer */
-footer {
-    background: url('../../images/autumn-bench.jpg')center center;
-    background-size: cover;
-    height: 600px;
+/*#region Blog */
+#blog {
+    margin-top: 30px;
 
-    .footer-caption {
-        color: #fff;
-        padding-top: 80px;
 
-        h1 {
-            text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
-            text-align: center;
-            text-transform: capitalize;
+    .blog-section {
+        background-color: #fff;
+        /*border-radius: 10px;*/
+        padding: 30px;
+        margin-bottom: 30px;
 
-            font: {
-                family: 'Animated';
-                size: 14rem;
+
+        article {
+            padding-bottom: 30px;
+            border-bottom: 1px dashed #333;
+
+            &:first-of-type h1 {
+                margin-top: 0;
+            }
+
+            &:last-of-type {
+                border: none;
             }
         }
 
-        .footer-socials {
-            text-align: center;
+        header {
+            h1 {
+                font: {
+                    family: Raleway-Regular;
+                    size: 3rem;
+                    weight: bold;
+                }
 
-            a {
-                color: #fff !important;
-                font-size: 8rem;
-                padding: 4%;
-                text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
-                -moz-transition: 800ms;
-                -o-transition: 800ms;
-                -webkit-transition: 800ms;
-                transition: 800ms;
+                color: #D04830;
+            }
 
-                &:hover {
-                    color: black;
+            .date-posted {
+                font-family: Raleway-Regular;
+                background-color: $bg-color;
+                padding: 5px;
+                border-radius: 5px;
+            }
+        }
+
+        p {
+            text-align: justify;
+
+            font: {
+                family: Raleway-Regular;
+            }
+
+            padding-bottom: 15px;
+        }
+    }
+
+    .blog-widget {
+        background-color: #fff;
+        /*border-radius: 10px;*/
+        margin-bottom: 30px;
+
+        &::after {
+            height: 20px;
+            display: block;
+            content: " ";
+        }
+
+        header {
+            padding: 30px 30px 0 30px;
+
+
+            h1 {
+                margin-top: 0;
+
+                font: {
+                    family: Raleway-Regular;
+                    size: 3rem;
+                    weight: bold;
+                }
+
+                color: #D04830;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+
+            li {
+
+
+                a {
+                    color: #fff;
+                    font-family: Raleway-Regular;
+                    display: block;
+                    padding: 10px 30px;
+                    background-color: #D04830;
+                    position: relative;
+                    vertical-align: middle;
+                    transform: translateZ(0);
+                    backface-visibility: hidden;
+                    position: relative;
+                    transition-property: color;
+                    transition-duration: 0.5s;
+
+                    &:hover {
+                        text-decoration: none;
+
+                        &::before {
+                            transform: scaleX(1);
+                            transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+                        }
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        z-index: -1;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: darken(#D04830, 10);
+                        transform: scaleX(0);
+                        transform-origin: 0 50%;
+                        transition-property: transform;
+                        transition-duration: 0.5s;
+                        transition-timing-function: ease-out;
+                    }
                 }
             }
         }
     }
+}
+
+
+/*#endregion */
+
+/*#region Protfolio */
+
+#projects {
+    .project {
+        margin-top: 30px;
+
+        a {
+
+            header {
+                background-color: #272729;
+                min-height: 200px;
+                /*position: relative;*/
+                padding: 7px;
+
+                h1 {
+                    color: #fff;
+                    margin: 0;
+                    padding: 30px;
+                    /*position: absolute;*/
+                    /*bottom: 30px;*/
+                    /*left: 30px;*/
+
+                    font: {
+                        family: 'Futura (Light)';
+                        weight: bold;
+                    }
+                }
+            }
+        }
+
+        .project-description {
+            background-color: #fff;
+
+
+            p {
+                color: #333;
+                padding: 30px;
+                text-align: justify;
+
+                font: {
+                    family: Raleway-Regular;
+                }
+            }
+        }
+    }
+}
+
+/*#endregion */
+
+/*#region Footer */
+footer {
+}
+
+.test1 {
+    background-color: #272729;
+    height: 300px;
+}
+
+.test2 {
+    background-color: #564646;
+    height: 100px;
 }
 
 
@@ -270,17 +488,20 @@ footer {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+    .nav {
+        background: none;
+    }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     #services {
         .light-grey-bg {
-            background-color: #EEEFE5;
+            background-color: $fg-color;
 
             .img-circle {
                 float: none;
-                background-color: #EEEFE5;
+                background-color: $fg-color;
                 border-radius: 50%;
                 height: 120px;
                 width: 120px;
