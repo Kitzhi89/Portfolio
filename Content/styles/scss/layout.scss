@@ -21,6 +21,7 @@
 }
 
 /*#endregion */
+
 /*#region Buttons */
 .button {
     background-color: #40373C;
@@ -41,6 +42,7 @@
 
 
 /*#endregion */
+
 $bg-color: #DEDECD;
 $fg-color: #EEEFE5;
 
@@ -201,6 +203,11 @@ body {
 }
 
 #services {
+    .row {
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+
     .light-grey-bg {
         background-color: $fg-color;
 
@@ -499,11 +506,11 @@ body {
                     }
 
                     .website-description {
-                        padding:10px;
+                        padding: 10px;
                     }
 
                     .button {
-                        margin:0;
+                        margin: 0;
                     }
                 }
             }
@@ -515,17 +522,35 @@ body {
 
 /*#region Footer */
 footer {
-}
-
-.test1 {
     background-color: #272729;
-    height: 300px;
+    min-height: 300px;
+    padding: 60px 0;
+
+
+    .footer-part {
+        border-radius: 3px;
+        border: 2px solid #3d3d3d;
+
+        .part-description {
+            font-family: Raleway-Regular;
+            color:#fff;
+            padding:10px;
+
+            h3 {
+                font-weight:bold;
+                text-align:center;
+                text-transform:uppercase;
+            }
+
+            p {
+                text-align: justify;
+
+            }
+        }
+    }
 }
 
-.test2 {
-    background-color: #564646;
-    height: 100px;
-}
+
 
 
 /*#endregion */
@@ -549,6 +574,10 @@ footer {
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     #services {
+        .row {
+            padding-top: 0;
+        }
+
         .light-grey-bg {
             background-color: $fg-color;
 
