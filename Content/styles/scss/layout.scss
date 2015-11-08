@@ -28,9 +28,10 @@
     border-radius: 3px;
     color: #fff;
     transition: 800ms;
-    margin-left:30px;
-    display:inline-block;
-    margin-bottom:15px;
+    margin-left: 30px;
+    display: inline-block;
+    margin-bottom: 15px;
+
     &:hover {
         color: #fff;
         background-color: darken(#40373C,5);
@@ -286,8 +287,9 @@ body {
 
 
         article {
-            background-color:#fff;
-            margin-bottom:30px;
+            background-color: #fff;
+            margin-bottom: 30px;
+
             &:first-of-type h1 {
             }
 
@@ -297,7 +299,7 @@ body {
         }
 
         header {
-            background-color:#272729;
+            background-color: #272729;
             padding: 30px 30px 15px 30px;
 
             h1 {
@@ -315,14 +317,15 @@ body {
             .date-posted {
                 font-family: Raleway-Regular;
                 padding: 5px;
-                color:#D04830;
+                color: #D04830;
             }
         }
 
         p {
             padding-bottom: 15px;
             text-align: justify;
-            padding:15px 30px;
+            padding: 15px 30px;
+
             font: {
                 family: Raleway-Regular;
             }
@@ -346,7 +349,8 @@ body {
 
             h1 {
                 margin: 0;
-                margin-bottom:10px;
+                margin-bottom: 10px;
+
                 font: {
                     family: Raleway-Regular;
                     size: 3rem;
@@ -358,10 +362,10 @@ body {
 
             p {
                 color: #D04830;
-                margin:0;
-                margin-bottom:10px;
-                font-family:Raleway-Regular;
-                padding:5px;
+                margin: 0;
+                margin-bottom: 10px;
+                font-family: Raleway-Regular;
+                padding: 5px;
             }
         }
 
@@ -464,6 +468,43 @@ body {
 
                 font: {
                     family: Raleway-Regular;
+                }
+            }
+        }
+    }
+}
+
+.showcase-modal {
+    .modal-dialog {
+
+        .modal-content {
+            border-radius: 0 !important;
+
+            modal-header {
+                h4 {
+                }
+            }
+
+            .modal-body {
+                .description-con {
+                    font: {
+                        family: Raleway-Regular;
+                    }
+
+                    .project-subject {
+                        display: block;
+                        background-color: #272729;
+                        padding: 10px;
+                        color: #D04830;
+                    }
+
+                    .website-description {
+                        padding:10px;
+                    }
+
+                    .button {
+                        margin:0;
+                    }
                 }
             }
         }

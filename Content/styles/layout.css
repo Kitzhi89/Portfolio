@@ -295,6 +295,20 @@ body {
       margin: 0;
       font-family: Raleway-Regular; }
 
+.showcase-modal .modal-dialog .modal-content {
+  border-radius: 0 !important; }
+  .showcase-modal .modal-dialog .modal-content .modal-body .description-con {
+    font-family: Raleway-Regular; }
+    .showcase-modal .modal-dialog .modal-content .modal-body .description-con .project-subject {
+      display: block;
+      background-color: #272729;
+      padding: 10px;
+      color: #D04830; }
+    .showcase-modal .modal-dialog .modal-content .modal-body .description-con .website-description {
+      padding: 10px; }
+    .showcase-modal .modal-dialog .modal-content .modal-body .description-con .button {
+      margin: 0; }
+
 /*#endregion */
 /*#region Footer */
 .test1 {

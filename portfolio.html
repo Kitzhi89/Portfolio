@@ -66,7 +66,7 @@
             <div class="row">
                 <div class="col-xs-12 col-md-4">
                     <div class="project">
-                        <a href="">
+                        <a data-toggle="modal" data-target="#portfolio-modal">
                             <header>
                                 <img src="Content/images/Stand-out.png" class="img-responsive" />
                                 <h1>My Portfolio</h1>
@@ -79,7 +79,7 @@
                 </div>
                 <div class="col-xs-12 col-md-4">
                     <div class="project">
-                        <a href="">
+                        <a data-toggle="modal" data-target="#wiehl-modal">
                             <header>
                                 <img src="Content/images/wiehl.png" class="img-responsive" />
                                 <h1>Frisør Wiehl</h1>
@@ -123,7 +123,59 @@
 
 
 
+    <!-- Modal -->
+    <div class="modal fade showcase-modal " id="portfolio-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-7">
+                            <img src="Content/images/frontpage-small.jpg" class="img-responsive" />
+                        </div>
+                        <div class="col-xs-12 col-md-5">
+                            <div class="description-con">
+                                <p class="project-subject">Responsive Design</p>
+                                <p class="project-subject">Development</p>
+                                <p class="website-description">Quisque vehicula mi justo. Vivamus nunc urna, vehicula ac felis non, faucibus egestas tellus. Vivamus nec maximus augue, ac molestie risus.</p>
+                                <a href="" class="button"> Launch Website</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Modal -->
+    <div class="modal fade showcase-modal " id="wiehl-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-7">
+                            <img src="Content/images/test-screenshot.jpg" class="img-responsive"/>
+                        </div>
+                        <div class="col-xs-12 col-md-5">
+                            <div class="description-con">
+                                <p class="project-subject">Responsive Design</p>
+                                <p class="project-subject">Development</p>
+                                <p class="website-description">Quisque vehicula mi justo. Vivamus nunc urna, vehicula ac felis non, faucibus egestas tellus. Vivamus nec maximus augue, ac molestie risus.</p>
+                                <a href="" class="button"> Launch Website</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="scripts/npm.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="scripts/bootstrap.js"></script>
